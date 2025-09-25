@@ -1,0 +1,33 @@
+actor_learning_rate: 0.0003
+batch_size: 256
+ckpt: latest
+critic_learning_rate: 0.0003
+defaults:
+- _self_
+- task: bullet-halfcheetah-expert-v0
+device: cuda:0
+diffusion_steps: 5
+discount: 0.99
+ema_rate: 0.995
+ema_update_interval: 5
+experiment_name: default_exp
+gradient_steps: 200000
+hidden_dim: 256
+hydra:
+  job:
+    chdir: false
+log_interval: 400
+mode: train
+normalize_reward: true
+num_candidates: 50
+num_envs: 50
+num_episodes: 3
+pipeline_name: dql_d4rl_mujoco
+predict_noise: true
+retrain_classifier_step: 100000
+sampling_steps: 5
+save_interval: 400
+seed: 42
+solver: ddpm
+temperature: 0.5
+use_ema: true

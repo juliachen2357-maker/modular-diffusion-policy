@@ -1,0 +1,6 @@
+env_name: "bullet-hopper-medium-v0"
+
+weight_temperature: 100.
+eta: 1.
+
+retrain_classifier_step: 100000

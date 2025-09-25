@@ -1,0 +1,39 @@
+actor_dropout: 0.1
+actor_hidden_dim: 256
+actor_learning_rate: 0.0003
+actor_n_blocks: 3
+batch_size: 256
+ckpt: latest
+critic_hidden_dim: 256
+critic_learning_rate: 0.0003
+defaults:
+- _self_
+- task: bullet-halfcheetah-expert-v0
+device: cuda:0
+diffusion_steps: 5
+discount: 0.99
+ema_rate: 0.9999
+experiment_name: default_exp
+gradient_steps: 200000
+hydra:
+  job:
+    chdir: false
+iql_tau: 0.7
+log_interval: 400
+mode: train
+normalize_reward: true
+num_candidates: 256
+num_envs: 50
+num_episodes: 3
+pipeline_name: idql_d4rl_mujoco
+predict_noise: true
+retrain_classifier_step: 100000
+sampling_steps: 5
+save_interval: 400
+seed: 42
+solver: ddpm
+temperature: 0.5
+use_ema: true
+weight_temperature: 0.5
+
+adv_temperature: 1.0  # 优势权重温度系数

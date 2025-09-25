@@ -1,0 +1,6 @@
+env_name: "bullet-walker2d-medium-expert-v0"
+
+weight_temperature: 300.
+eta: 1.
+
+retrain_classifier_step: 100000
