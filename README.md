@@ -23,7 +23,7 @@ If you prefer venv, please make sure Python 3.10 is already installed on your sy
 
 ## ▶️ Usage
 
-To run the main program (adjust `main.py` to your actual entry script):
+To run the main program (adjust `dql_d4rl_mujoco.py` to your actual entry script):
 
 ```bash
 python pipelines/dql_d4rl_mujoco.py
