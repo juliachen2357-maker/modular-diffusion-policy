@@ -61,7 +61,7 @@ If you encounter problems during installation or running the code:
 ## 🙏 Acknowledgements
 
 This project is built upon [CleanDiffuser](https://github.com/CleanDiffuserTeam/CleanDiffuser).  
-All credits go to the original authors — this is just a customized extension.  
+All credits for the dataset and benchmark go to the original authors — this is a GitHub to modularize the diffusion models.  
 
 ---
 
